@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #e7cdcd;
+  background-color: #f0f0f0;
 }
 
 .game-container {
@@ -16,8 +16,8 @@ body {
 .player {
   width: 100px;
   height: 150px;
-  border: 2px solid #333;
   margin: 10px;
+  background-size: cover;
 }
 
 #result {
@@ -25,3 +25,4 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+

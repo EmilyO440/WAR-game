@@ -23,3 +23,4 @@ function determineWinner() {
 
     document.getElementById('result').innerText = result;
 }
+

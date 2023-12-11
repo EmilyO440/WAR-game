@@ -1,11 +1,11 @@
 let player1Card, player2Card;
 
 function play() {
-    player1Card = Math.floor(Math.random() * 13) + 1;
-    player2Card = Math.floor(Math.random() * 13) + 1;
+    player1Card = Math.floor(Math.random() * 52) + 1;
+    player2Card = Math.floor(Math.random() * 52) + 1;
 
-    document.getElementById('player1').style.backgroundImage = `url('images/card${player1Card}.png')`;
-    document.getElementById('player2').style.backgroundImage = `url('images/card${player2Card}.png')`;
+    document.getElementById('player1').style.backgroundImage = 'https://th.bing.com/th/id/OIP.3RfLDw5Db6YKzjUwZHijLQHaKX?rs=1&pid=ImgDetMain'
+    document.getElementById('player2').style.backgroundImage = 'https://th.bing.com/th/id/OIP.3RfLDw5Db6YKzjUwZHijLQHaKX?rs=1&pid=ImgDetMain'
 
     determineWinner();
 }
@@ -23,4 +23,5 @@ function determineWinner() {
 
     document.getElementById('result').innerText = result;
 }
+
 

@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>War Game</title>
-</head>
-<body>
-    <div class="game-container">
-        <div id="player1" class="player"></div>
-        <div id="player2" class="player"></div>
-        <button id="playButton" onclick="play()">Play</button>
-        <div id="result"></div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Game of WAR</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='styles.css'>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo"></div>
     </div>
-    <script src="script.js"></script>
-</body>
+      <div id="main">
+        <div id="board">
+          <h1>Welcome to WAR!</h1>
+          <p style="color: lemonchiffon">Please click start to shuffle each deck, then hit battle to draw each hand.</p>
+          <button id='start'>Start</button>
+          <button id='battle'>Battle</button>
+          <!-- <button id='auto'>Auto</button> -->
+          <div id="player1">
+            Player 1
+            <!-- <button id="player1draw">Pick Card</button> -->
+          </div>
+          <div id="player2">
+            Player 2
+            <!-- <button id='player2draw'>Pick Card</button> -->
+          </div>
+        </div>
+      </div>
+    <script src='script.js'></script>
+  </body>
 </html>

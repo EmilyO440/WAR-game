@@ -1,30 +1,182 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
+*
+{
+    font-family: 'Audiowide', cursive;
+
+    box-sizing: border-box;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c22400+0,801700+17,801700+17,801700+35,801700+64,a21e00+100 */
+
+    background: #b095e2; /* Old browsers */
+    background:    -moz-linear-gradient(top, #c22400 0%, #801700 17%, #801700 17%, #801700 35%, #801700 64%, #a21e00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c22400), color-stop(17%,#801700), color-stop(17%,#801700), color-stop(35%,#801700), color-stop(64%,#801700), color-stop(100%,#a21e00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c22400 0%,#801700 17%,#801700 17%,#801700 35%,#801700 64%,#a21e00 100%); /* Chrome10+,Safari5.1+ */
+    background:      -o-linear-gradient(top, #c22400 0%,#801700 17%,#801700 17%,#801700 35%,#801700 64%,#a21e00 100%); /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #c22400 0%,#801700 17%,#801700 17%,#801700 35%,#801700 64%,#a21e00 100%); /* IE10+ */
+    background:         linear-gradient(to bottom, #c22400 0%,#801700 17%,#801700 17%,#801700 35%,#801700 64%,#a21e00 100%); /* W3C */
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c22400', endColorstr='#a21e00',GradientType=0 ); /* IE6-9 */
 }
 
-.game-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h1
+{
+    color: #ff9d00;
+    border-radius: 5px;
+    /*text-shadow: 3px 3px 3px 3px;*/
+}
+span
+{
+    color: white;
+    border-radius: 5px;
+}
+#board
+{
+    width: 100%;
 }
 
-.player {
-  width: 100px;
-  height: 150px;
-  margin: 10px;
-  background-size: cover;
+/*p {
+  border: 1px solid blue;
+  float: left;
+  margin-left: 10px;
+  padding-top: 30px
+}*/
+div
+{
+    text-align: center;
+
+    border: 1px solid black;
+}
+#player1
+{
+    font-size: 30px;
+
+    float: left;
+
+    width: 45%;
+    height: 600px;
+    margin-top: 40px;
+    padding-top: 250px;
+
+    background: -webkit-linear-gradient(90deg, #ec6f66 10%, #f3a183 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #ec6f66 10%, #f3a183 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #ec6f66 10%, #f3a183 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #ec6f66 10%, #f3a183 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #ec6f66 10%, #f3a183 90%); /* W3C */
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
+#player2
+{
+    font-size: 30px;
+
+    float: right;
+
+    width: 45%;
+    height: 600px;
+    margin-top: 40px;
+    padding-top: 250px;
+
+    background: -webkit-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* W3C */
+}
+
+#tieDiv {
+  width: 100%;
+  height: 600px;
+  background: -webkit-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* W3C */
+
+}
+
+#footer
+{
+    float: right;
+    clear: both;
+
+    color: white;
+}
+
+#start
+{
+    width: 55px;
+    height: 30px;
+    margin-bottom: 5px;
+
+    background: rgb(171, 255, 255);
+}
+
+#player1.enable
+{
+    -webkit-animation: flash 1s ease 1;
+       -moz-animation: flash 1s ease 1;
+        -ms-animation: flash 1s ease 1;
+         -o-animation: flash 1s ease 1;
+            animation: flash 1s ease 1;
+}
+
+#player2.enable
+{
+    -webkit-animation: flash 1s ease 1;
+       -moz-animation: flash 1s ease 1;
+        -ms-animation: flash 1s ease 1;
+         -o-animation: flash 1s ease 1;
+            animation: flash 1s ease 1;
+}
+
+p.enable {
+  -webkit-animation: flash 1s ease 1;
+     -moz-animation: flash 1s ease 1;
+      -ms-animation: flash 1s ease 1;
+       -o-animation: flash 1s ease 1;
+          animation: flash 1s ease 1;
 }
 
 
+/* animation */
+@-webkit-keyframes flash
+{
+    50%
+    {
+        opacity: 0;
+    }
+}
 
+@-moz-keyframes flash
+{
+    50%
+    {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes flash
+{
+    50%
+    {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes flash
+{
+    50%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes flash
+{
+    50%
+    {
+        opacity: 0;
+    }
+}
+
+#green
+{
+    background: rgb(114, 163, 255);
+}
